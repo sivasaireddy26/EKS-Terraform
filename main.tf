@@ -179,7 +179,7 @@ resource "aws_eks_node_group" "devopsshack" {
     min_size     = 1
   }
 
-  instance_types = ["t2.micro"]
+  instance_types = ["t2.small"]
 
   depends_on = [
     aws_eks_cluster.devopsshack
